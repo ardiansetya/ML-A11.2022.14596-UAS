@@ -24,7 +24,7 @@ Project ini bertujuan untuk mengklasifikasikan sentimen tweet yang berkaitan den
 
 ## Membaca Data
 
-Langkah pertama adalah membaca data yang telah diambil dari Twitter. Data biasanya disimpan dalam file CSV dan dimuat ke dalam DataFrame untuk pemrosesan lebih lanjut.
+Langkah pertama adalah membaca data yang telah diambil dari Twitter. Disini saya membagi menjadi 3 file data presiden (Anies, Prabowo, Ganjar) dan dimuat ke dalam DataFrame untuk pemrosesan lebih lanjut.
 
 ## Pembersihan Data
 
@@ -52,7 +52,7 @@ Stopword adalah kata-kata umum yang sering muncul dalam teks tetapi tidak member
 
 ### Tokenisasi
 
-Teks dipecah menjadi unit-unit yang lebih kecil, biasanya kata-kata atau token, untuk memudahkan analisis lebih lanjut.
+Teks dipecah menjadi unit-unit yang lebih kecil, kata-kata atau token, untuk memudahkan analisis lebih lanjut.
 
 ### Stemming
 
