@@ -20,7 +20,7 @@ Project ini bertujuan untuk mengklasifikasikan sentimen tweet yang berkaitan den
   - [Seaborn](#seaborn)
 - [Splitting Data dan Konversi Teks Menjadi Fitur Numerik](#splitting-data-dan-konversi-teks-menjadi-fitur-numerik)
 - [Melatih Model dan Membuat Prediksi](#melatih-model-dan-membuat-prediksi)
-  - [Confussion Matrix](#confussion-matrix)
+  - [Confusion Matrix](#confusion-matrix)
 
 ## Membaca Data
 
@@ -52,7 +52,7 @@ Stopword adalah kata-kata umum yang sering muncul dalam teks tetapi tidak member
 
 ### Tokenisasi
 
-Teks dipecah menjadi unit-unit yang lebih kecil, kata-kata atau token, untuk memudahkan analisis lebih lanjut.
+Teks dipecah menjadi unit-unit yang lebih kecil, biasanya kata-kata atau token, untuk memudahkan analisis lebih lanjut.
 
 ### Stemming
 
@@ -84,6 +84,6 @@ Data dibagi menjadi set pelatihan dan set pengujian. Teks dikonversi menjadi fit
 
 Model Gaussian Naive Bayes dilatih menggunakan data pelatihan. Setelah pelatihan, model digunakan untuk membuat prediksi pada data uji. 
 
-### Confussion Matriks
+### Confusion Matrix
 
 Matriks kebingungungan digunakan untuk mengevaluasi performa model dengan membandingkan prediksi dengan label yang sebenarnya. Ini membantu dalam mengidentifikasi jenis kesalahan yang dibuat oleh model.
