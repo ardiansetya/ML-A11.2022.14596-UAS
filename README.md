@@ -90,7 +90,7 @@ Teks dinormalisasi dengan mengubah semua huruf menjadi huruf kecil untuk konsist
 
 ### Penghapusan Stopword
 
-Stopword adalah kata-kata umum yang sering muncul dalam teks tetapi tidak memberikan banyak informasi penting. Kata-kata ini dihapus untuk fokus pada kata-kata yang lebih informatif.
+Menghapus kata-kata umum yang sering muncul dalam teks tetapi tidak memberikan banyak informasi penting. Kata-kata ini dihapus untuk fokus pada kata-kata yang lebih informatif.
 
 ### Tokenisasi
 
@@ -132,8 +132,20 @@ Confusion Matrix digunakan untuk mengevaluasi performa model dengan membandingka
 
 ## Hasil dan Kesimpulan
 ### Hasil
-Hasil yang diperoleh dari ketiga capres(Anies, Prabowo, Ganjar) sangat beragam, dan performa model dari ketiga capres juga memiliki hasil yang berbeda, pada capres Ganjar terdapat immbalance data yang harus dilakukan balancing data
-hasil sentimen dapat dilihat dibawah ini:
+Hasil yang diperoleh dari ketiga capres(Anies, Prabowo, Ganjar) sangat beragam, dan performa model dari ketiga capres juga memiliki hasil yang berbeda, pada capres Ganjar terdapat immbalance data yang harus dilakukan balancing data.
+Hasil sentimen dapat dilihat dibawah ini:
+
+### Anies Baswedan
+![Anies](https://github.com/user-attachments/assets/064d3aeb-82ca-45ee-858a-d6bd9d3e6da7)
+![cmAnies](https://github.com/user-attachments/assets/bfcbcbef-5519-44b5-8a73-8e7e0b38c015)
+
+### Prabowo Subianto
+![Prabowo](https://github.com/user-attachments/assets/4154c741-cdce-474f-ae93-ce87fc42c959)
+![cmPrabowo](https://github.com/user-attachments/assets/40117759-60a4-4d56-a167-ffd03fb04bdd)
+
+### Ganjar Pranowo
+![Ganjar](https://github.com/user-attachments/assets/48f69d80-0245-465d-bc3a-abf8fbb06ca0)
+![cmGanjar](https://github.com/user-attachments/assets/90462945-e44a-4c03-a202-21f8afb094c3)
 
 ### Kesimpulan 
 dapat diambil kesimpulan dari grafik distribusi sentimen dari ketiga capres diatas, Analisis sentimen ini memberikan gambaran umum tentang bagaimana pengguna Twitter merespons ketiga calon presiden. Meskipun sentimen positif dan negatif hadir untuk semua calon, variasi jumlahnya menunjukkan tingkat dukungan dan kritik yang berbeda. Calon Presiden Ganjar tampaknya lebih disukai publik, sementara Calon Presiden Anies menghadapi lebih banyak tantangan dalam mendapatkan dukungan. Calon Presiden Prabowo berada di tengah dengan pendapat publik yang terpolarisasi. Informasi ini dapat digunakan oleh tim kampanye untuk menyusun strategi komunikasi yang lebih efektif dan menangani masalah yang menjadi perhatian publik.
