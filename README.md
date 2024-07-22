@@ -1,8 +1,49 @@
-# Klasifikasi Sentimen Data Calon Presiden dari Pengguna Twitter
+# Klasifikasi Sentimen Data Calon Presiden Dari Pengguna Twitter
 
-Project ini bertujuan untuk mengklasifikasikan sentimen tweet yang berkaitan dengan presiden menggunakan berbagai teknik preprocessing dan model Gaussian Naive Bayes.
+Project ini bertujuan untuk melakukan klasifikasi sentimen menggunakan algoritma Naive Bayes terhadap data calon presiden yang diperoleh dari pengguna Twitter. Klasifikasi sentimen ini akan membantu dalam memahami opini publik mengenai calon presiden yang sedang bersaing. Data yang digunakan dalam proyek ini adalah tweet yang mengandung kata-kata kunci terkait calon presiden.
 
-## Daftar Isi
+## Permasalahan
+### 1. Volume Data yang Besar
+  - Data dari Twitter biasanya berjumlah besar, sehingga diperlukan metode yang efisien untuk mengelola dan menganalisis data ini.
+### 2. Beragamnya Bahasa dan Slang
+  - Tweet sering kali menggunakan bahasa informal, slang, dan singkatan yang dapat menyulitkan proses analisis.
+### 3. Noisy Data
+  - Data dari media sosial seperti Twitter sering kali mengandung banyak noise, seperti spam, tweet tidak relevan, atau teks yang tidak memiliki makna yang jelas.
+
+## Tujuan
+### 1. Mengidentifikasi Sentimen Publik terhadap Setiap Calon Presiden
+  - Mengidentifikasi Sentimen Publik terhadap Setiap Calon Presiden.
+  - Membandingkan jumlah tweet positif dan negatif untuk setiap calon presiden.
+### 2. Mengukur Perubahan Sentimen Seiring Waktu
+  - Melacak perubahan sentimen publik terhadap calon presiden dari waktu ke waktu, misalnya, sebelum dan sesudah debat, kampanye, atau peristiwa besar lainnya.
+### 3. Menyediakan Data untuk Analisis Strategis Kampanye
+  - Menyediakan data yang dapat digunakan oleh tim kampanye untuk mengidentifikasi area yang memerlukan perhatian lebih.
+  - Mengidentifikasi sentimen negatif yang mungkin memerlukan tindakan atau klarifikasi dari calon presiden.
+### 4. Evaluasi Pengaruh Kampanye Media Sosial
+  - Mengevaluasi efektivitas kampanye media sosial masing-masing calon presiden dengan melihat perubahan sentimen setelah kampanye dilakukan.
+
+## Goals
+### 1. Pengumpulan Data yang Komprehensif
+  - Mengumpulkan data tweet yang relevan dengan kata kunci terkait calon presiden dengan menggunakan API Twitter.
+### 2. Pembersihan dan Pra-pemrosesan Data
+  - Membersihkan data dari noise, seperti spam dan tweet yang tidak relevan.
+  - Normalisasi teks tweet untuk mempersiapkan data bagi analisis lebih lanjut.
+### 3. Pengembangan Model Klasifikasi Sentimen yang Akurat
+  - Membangun dan melatih model machine learning untuk mengklasifikasikan sentimen tweet sebagai positif, negatif, atau netral dengan akurasi yang tinggi.
+### 4. Evaluasi Model dengan Metrik yang Sesuai
+  - Menggunakan metrik evaluasi seperti akurasi, presisi, recall, dan F1-score untuk memastikan model memiliki performa yang baik.
+### 5. Analisis Sentimen Berdasarkan Calon Presiden
+  - Menentukan sentimen publik terhadap masing-masing calon presiden secara keseluruhan dan berdasarkan waktu.
+### 6. Pelacakan Perubahan Sentimen Seiring Waktu
+  - Melacak dan menganalisis perubahan sentimen publik terhadap calon presiden dari waktu ke waktu, termasuk sebelum dan sesudah peristiwa penting.
+
+## Penjelasan dataset
+Saat mencari data untuk menganalisis sentimen pengguna Twitter terhadap calon presiden 2024, langkah pertama yang dilakukan adalah mencari sumber data yang tepat. Salah satu cara untuk mendapatkan data adalah dengan meng-crawl data dari Twitter menggunakan Twitter API. Namun, sebelum memulai proses perayapan, harus mempertimbangkan beberapa pertimbangan, seperti batasan jumlah data yang dikumpulkan dan batas kecepatan API Twitter.
+Dalam konteks ini, kami memutuskan untuk menggunakan Twitter API untuk pengumpulan data. Setelah mendaftar sebagai pengembang di platform Twitter dan membangun aplikasi pengembang, kami mulai menyusun kueri penelusuran yang sesuai dengan topik penelitian saya: analisis sentimen calon presiden 2024.
+Kueri penelusuran yang kami gunakan mencakup berbagai  nama calon presiden yang relevan dan kata kunci terkait, seperti “Anies”, “Prabowo”, dan “Ganjar”. Setelah membuat permintaan pencarian, saya mulai menerapkan logika dalam program saya untuk memproses data dari Twitter. Pada dataset Anies dan Prabowo memiliki data yang cenderung balance, sedangkan Dataset Ganjar terdapat immbalance data sehingga perlu dilakukan balancing data
+
+
+## Alur 
 - [Membaca Data](#membaca-data)
 - [Pembersihan Data](#pembersihan-data)
   - [Menghapus Duplikat](#menghapus-duplikat)
@@ -21,6 +62,7 @@ Project ini bertujuan untuk mengklasifikasikan sentimen tweet yang berkaitan den
 - [Splitting Data dan Konversi Teks Menjadi Fitur Numerik](#splitting-data-dan-konversi-teks-menjadi-fitur-numerik)
 - [Melatih Model dan Membuat Prediksi](#melatih-model-dan-membuat-prediksi)
   - [Confusion Matrix](#confusion-matrix)
+- [Hasil dan Kesimpulan](#hasil-dan-kesimpulan)
 
 ## Membaca Data
 
@@ -86,4 +128,12 @@ Model Gaussian Naive Bayes dilatih menggunakan data pelatihan. Setelah pelatihan
 
 ### Confusion Matrix
 
-Matriks kebingungungan digunakan untuk mengevaluasi performa model dengan membandingkan prediksi dengan label yang sebenarnya. Ini membantu dalam mengidentifikasi jenis kesalahan yang dibuat oleh model.
+Confusion Matrix digunakan untuk mengevaluasi performa model dengan membandingkan prediksi dengan label yang sebenarnya. Ini membantu dalam mengidentifikasi jenis kesalahan yang dibuat oleh model.
+
+## Hasil dan Kesimpulan
+### Hasil
+Hasil yang diperoleh dari ketiga capres(Anies, Prabowo, Ganjar) sangat beragam, dan performa model dari ketiga capres juga memiliki hasil yang berbeda, pada capres Ganjar terdapat immbalance data yang harus dilakukan balancing data
+hasil sentimen dapat dilihat dibawah ini:
+
+### Kesimpulan 
+dapat diambil kesimpulan dari grafik distribusi sentimen dari ketiga capres diatas, Analisis sentimen ini memberikan gambaran umum tentang bagaimana pengguna Twitter merespons ketiga calon presiden. Meskipun sentimen positif dan negatif hadir untuk semua calon, variasi jumlahnya menunjukkan tingkat dukungan dan kritik yang berbeda. Calon Presiden Ganjar tampaknya lebih disukai publik, sementara Calon Presiden Anies menghadapi lebih banyak tantangan dalam mendapatkan dukungan. Calon Presiden Prabowo berada di tengah dengan pendapat publik yang terpolarisasi. Informasi ini dapat digunakan oleh tim kampanye untuk menyusun strategi komunikasi yang lebih efektif dan menangani masalah yang menjadi perhatian publik.
