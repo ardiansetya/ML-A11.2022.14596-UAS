@@ -132,7 +132,7 @@ Confusion Matrix digunakan untuk mengevaluasi performa model dengan membandingka
 
 ## Hasil dan Kesimpulan
 ### Hasil
-Hasil yang diperoleh dari ketiga capres(Anies, Prabowo, Ganjar) sangat beragam, dan performa model dari ketiga capres juga memiliki hasil yang berbeda, pada capres Ganjar terdapat immbalance data yang harus dilakukan balancing data.
+Hasil yang diperoleh dari ketiga capres(Anies, Prabowo, Ganjar) sangat beragam, dan performa model dari ketiga capres juga memiliki hasil yang berbeda, pada capres Ganjar terdapat imbalance data yang harus dilakukan balancing data.
 Hasil sentimen dapat dilihat dibawah ini:
 
 ### Anies Baswedan
@@ -143,7 +143,7 @@ Hasil sentimen dapat dilihat dibawah ini:
 ![Prabowo](https://github.com/user-attachments/assets/4154c741-cdce-474f-ae93-ce87fc42c959)
 ![cmPrabowo](https://github.com/user-attachments/assets/40117759-60a4-4d56-a167-ffd03fb04bdd)
 
-### Ganjar Pranowo
+### Ganjar Pranowo (imbalance dataset)
 ![Ganjar](https://github.com/user-attachments/assets/48f69d80-0245-465d-bc3a-abf8fbb06ca0)
 ![cmGanjar](https://github.com/user-attachments/assets/90462945-e44a-4c03-a202-21f8afb094c3)
 
