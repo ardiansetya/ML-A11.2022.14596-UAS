@@ -1,4 +1,4 @@
-# Klasifikasi Sentimen Data Calon Presiden Dari Pengguna Twitter
+# Klasifikasi Sentimen Calon Presiden Dari Pengguna Twitter
 
 Project ini bertujuan untuk melakukan klasifikasi sentimen menggunakan algoritma Naive Bayes terhadap data calon presiden yang diperoleh dari pengguna Twitter. Klasifikasi sentimen ini akan membantu dalam memahami opini publik mengenai calon presiden yang sedang bersaing. Data yang digunakan dalam proyek ini adalah tweet yang mengandung kata-kata kunci terkait calon presiden.
 
